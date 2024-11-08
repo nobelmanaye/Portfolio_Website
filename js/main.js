@@ -205,7 +205,27 @@
 
   	});  
   
-
+	  document.addEventListener('DOMContentLoaded', function() {
+		// Get the button by its ID
+		var hireMeButton = document.getElementById('hireMeButton');
+	
+		hireMeButton.addEventListener('click', function(e) {
+			e.preventDefault();
+	
+			// Get the target element by its ID
+			var targetElement = document.getElementById('contact');
+	
+			if (targetElement) {
+				// Use the scrollIntoView method for smooth scrolling
+				targetElement.scrollIntoView({
+					behavior: 'smooth'
+				});
+	
+				// Optionally update the URL hash
+				history.pushState(null, null, '#contact');
+			}
+		});
+	});
    /*---------------------------------------------------- */
 	/*  Placeholder Plugin Settings
 	------------------------------------------------------ */ 
@@ -264,6 +284,25 @@
 
 	});
 
+	document.getElementById("DownloadButton").addEventListener('click', function() {
+		// Create an invisible anchor element
+		var a = document.createElement('a');
+		
+		// Set the href attribute to the file URL
+		a.href = 'js/Nobel_Manaye_Resume.pdf'; // Replace with the exact file name and extension
+		
+		// Set the download attribute with a default file name
+		a.download = 'js/Nobel_Manaye_Resume.pdf'; // This will be the name of the downloaded file
+		
+		// Append the anchor to the body
+		document.body.appendChild(a);
+		
+		// Trigger a click on the anchor
+		a.click();
+		
+		// Remove the anchor from the document
+		document.body.removeChild(a);
+	});
 
  	/*----------------------------------------------------- */
   	/* Back to top
