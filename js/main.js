@@ -289,10 +289,10 @@
 		var a = document.createElement('a');
 		
 		// Set the href attribute to the file URL
-		a.href = 'js/Nobel_Manaye_Resume.pdf'; // Replace with the exact file name and extension
+		a.href = 'Nobel_Manaye_Resume.pdf'; // Replace with the exact file name and extension
 		
 		// Set the download attribute with a default file name
-		a.download = 'js/Nobel_Manaye_Resume.pdf'; // This will be the name of the downloaded file
+		a.download = 'Nobel_Manaye_Resume.pdf'; // This will be the name of the downloaded file
 		
 		// Append the anchor to the body
 		document.body.appendChild(a);
