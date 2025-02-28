@@ -869,3 +869,17 @@ textarea {
 }
 
 /*# sourceMappingURL=base.css.map */
+.cool-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.cool-button:hover {
+    background-color: #0056b3;
+}
